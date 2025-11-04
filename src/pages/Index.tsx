@@ -6,9 +6,20 @@ import { Textarea } from '@/components/ui/textarea';
 import Icon from '@/components/ui/icon';
 import { Badge } from '@/components/ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { useToast } from '@/hooks/use-toast';
 
 export default function Index() {
   const [activeSection, setActiveSection] = useState('home');
+  const { toast } = useToast();
+  const serverIP = 'g1.yukicore.org:25331';
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(serverIP);
+    toast({
+      title: "IP скопирован!",
+      description: serverIP,
+    });
+  };
 
   const donatPackages = [
     {
@@ -203,9 +214,19 @@ export default function Index() {
                 Лучший Minecraft сервер для приключений
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <div className="bg-white/90 px-6 py-3 pixel-corners shadow-xl">
+                <div className="bg-white/90 px-6 py-3 pixel-corners shadow-xl relative group">
                   <p className="text-sm text-muted-foreground">IP адрес сервера:</p>
-                  <p className="text-xl font-bold text-primary">g1.yukicore.org:25331</p>
+                  <div className="flex items-center gap-2">
+                    <p className="text-xl font-bold text-primary">{serverIP}</p>
+                    <Button 
+                      size="sm" 
+                      variant="ghost"
+                      onClick={copyToClipboard}
+                      className="hover:bg-primary/10 pixel-corners"
+                    >
+                      <Icon name="Copy" size={18} className="text-primary" />
+                    </Button>
+                  </div>
                 </div>
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-bold text-lg px-8 py-6 pixel-corners shadow-xl">
                   <Icon name="Users" className="mr-2" size={24} />
