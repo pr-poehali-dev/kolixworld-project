@@ -512,10 +512,67 @@ export default function Index() {
         </section>
       )}
 
-      <footer className="bg-primary/95 text-white py-8 mt-20">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-lg font-semibold mb-2">KOLIXWORLD © 2024</p>
-          <p className="text-sm text-white/80">Лучший Minecraft сервер для твоих приключений</p>
+      <footer className="bg-primary/95 text-white py-12 mt-20 border-t-4 border-accent">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div className="text-center md:text-left">
+              <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
+                <img 
+                  src="https://cdn.poehali.dev/files/84a82a8b-0b23-4e6b-87bd-909f2168544e.jpg" 
+                  alt="KH Logo"
+                  className="w-12 h-12 object-contain"
+                />
+                <h3 className="text-2xl font-bold">KOLIXWORLD</h3>
+              </div>
+              <p className="text-sm text-white/80">Лучший Minecraft сервер для твоих приключений</p>
+              <p className="text-sm text-white/80 mt-2">IP: {serverIP}</p>
+            </div>
+            
+            <div className="text-center">
+              <h4 className="text-lg font-bold mb-4">Навигация</h4>
+              <div className="space-y-2">
+                <button onClick={() => setActiveSection('home')} className="block w-full text-white/80 hover:text-accent transition-colors">Главная</button>
+                <button onClick={() => setActiveSection('donates')} className="block w-full text-white/80 hover:text-accent transition-colors">Донаты</button>
+                <button onClick={() => setActiveSection('cases')} className="block w-full text-white/80 hover:text-accent transition-colors">Кейсы</button>
+                <button onClick={() => setActiveSection('rules')} className="block w-full text-white/80 hover:text-accent transition-colors">Правила</button>
+              </div>
+            </div>
+            
+            <div className="text-center md:text-right">
+              <h4 className="text-lg font-bold mb-4">Наши соцсети</h4>
+              <div className="flex justify-center md:justify-end gap-4 mb-4">
+                <Button 
+                  variant="outline" 
+                  size="icon" 
+                  className="pixel-corners border-2 border-white/20 hover:bg-accent hover:text-primary hover:border-accent"
+                  onClick={() => window.open('https://t.me/kolixworld', '_blank')}
+                >
+                  <Icon name="Send" size={20} />
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="icon" 
+                  className="pixel-corners border-2 border-white/20 hover:bg-accent hover:text-primary hover:border-accent"
+                  onClick={() => window.open('https://discord.gg/YpmsSZJzY2', '_blank')}
+                >
+                  <Icon name="MessageCircle" size={20} />
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="icon" 
+                  className="pixel-corners border-2 border-white/20 hover:bg-accent hover:text-primary hover:border-accent"
+                  onClick={() => window.open('https://vk.com/kolixworld', '_blank')}
+                >
+                  <Icon name="Users" size={20} />
+                </Button>
+              </div>
+              <p className="text-xs text-white/60">Присоединяйся к сообществу!</p>
+            </div>
+          </div>
+          
+          <div className="border-t border-white/20 pt-6 text-center">
+            <p className="text-sm text-white/80">KOLIXWORLD © 2024. Все права защищены.</p>
+          </div>
         </div>
       </footer>
     </div>
