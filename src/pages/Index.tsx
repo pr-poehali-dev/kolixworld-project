@@ -470,31 +470,40 @@ export default function Index() {
                 </form>
                 <div className="mt-8 pt-8 border-t-2 border-primary/20">
                   <p className="text-center text-sm text-muted-foreground mb-4">Или найди нас здесь:</p>
-                  <div className="flex justify-center gap-4">
-                    <Button 
-                      variant="outline" 
-                      size="icon" 
-                      className="pixel-corners border-2 hover:bg-primary hover:text-white"
-                      onClick={() => window.open('https://t.me/kolixworld', '_blank')}
-                    >
-                      <Icon name="Send" size={20} />
-                    </Button>
-                    <Button 
-                      variant="outline" 
-                      size="icon" 
-                      className="pixel-corners border-2 hover:bg-primary hover:text-white"
-                      onClick={() => window.open('https://discord.gg/YpmsSZJzY2', '_blank')}
-                    >
-                      <Icon name="MessageCircle" size={20} />
-                    </Button>
-                    <Button 
-                      variant="outline" 
-                      size="icon" 
-                      className="pixel-corners border-2 hover:bg-primary hover:text-white"
-                      onClick={() => window.open('https://vk.com/kolixworld', '_blank')}
-                    >
-                      <Icon name="Users" size={20} />
-                    </Button>
+                  <div className="flex justify-center gap-6">
+                    <div className="flex flex-col items-center gap-2">
+                      <Button 
+                        variant="outline" 
+                        size="icon" 
+                        className="pixel-corners border-2 hover:bg-primary hover:text-white w-12 h-12"
+                        onClick={() => window.open('https://t.me/kolixworld', '_blank')}
+                      >
+                        <Icon name="Send" size={20} />
+                      </Button>
+                      <span className="text-xs text-muted-foreground">Telegram</span>
+                    </div>
+                    <div className="flex flex-col items-center gap-2">
+                      <Button 
+                        variant="outline" 
+                        size="icon" 
+                        className="pixel-corners border-2 hover:bg-primary hover:text-white w-12 h-12"
+                        onClick={() => window.open('https://discord.gg/YpmsSZJzY2', '_blank')}
+                      >
+                        <Icon name="MessageCircle" size={20} />
+                      </Button>
+                      <span className="text-xs text-muted-foreground">Discord</span>
+                    </div>
+                    <div className="flex flex-col items-center gap-2">
+                      <Button 
+                        variant="outline" 
+                        size="icon" 
+                        className="pixel-corners border-2 hover:bg-primary hover:text-white w-12 h-12"
+                        onClick={() => window.open('https://vk.com/kolixworld', '_blank')}
+                      >
+                        <Icon name="Users" size={20} />
+                      </Button>
+                      <span className="text-xs text-muted-foreground">VK</span>
+                    </div>
                   </div>
                 </div>
               </CardContent>
