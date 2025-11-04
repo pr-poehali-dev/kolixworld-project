@@ -292,9 +292,15 @@ export default function Index() {
                         <span className="text-sm">{feature}</span>
                       </div>
                     ))}
-                    <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold pixel-corners mt-4">
-                      Купить сейчас
-                    </Button>
+                    <div className="space-y-2 mt-4">
+                      <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold pixel-corners">
+                        <Icon name="CreditCard" className="mr-2" size={20} />
+                        Оплата по карте
+                      </Button>
+                      <Button className="w-full bg-secondary hover:bg-secondary/90 text-white font-bold pixel-corners">
+                        Купить сейчас
+                      </Button>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
@@ -331,9 +337,15 @@ export default function Index() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-sm text-muted-foreground text-center mb-4">{caseItem.description}</p>
-                      <Button className="w-full bg-accent hover:bg-accent/90 text-primary font-bold pixel-corners">
-                        Купить
-                      </Button>
+                      <div className="space-y-2">
+                        <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold pixel-corners text-sm">
+                          <Icon name="CreditCard" className="mr-2" size={18} />
+                          Оплата по карте
+                        </Button>
+                        <Button className="w-full bg-accent hover:bg-accent/90 text-primary font-bold pixel-corners">
+                          Купить
+                        </Button>
+                      </div>
                     </CardContent>
                   </Card>
                 ))}
@@ -360,9 +372,15 @@ export default function Index() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-sm text-muted-foreground text-center mb-4">{service.description}</p>
-                      <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold pixel-corners">
-                        Купить
-                      </Button>
+                      <div className="space-y-2">
+                        <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold pixel-corners text-sm">
+                          <Icon name="CreditCard" className="mr-2" size={18} />
+                          Оплата по карте
+                        </Button>
+                        <Button className="w-full bg-accent hover:bg-accent/90 text-primary font-bold pixel-corners">
+                          Купить
+                        </Button>
+                      </div>
                     </CardContent>
                   </Card>
                 ))}
