@@ -14,7 +14,7 @@ export default function Index() {
     {
       id: 1,
       name: 'HERO',
-      price: '99₽',
+      price: '20₽',
       image: 'https://cdn.poehali.dev/projects/390cba9d-ddc0-4998-babf-8adefc8eb816/files/c8577492-8085-4d1b-a6bc-580b809e32c5.jpg',
       features: ['Уникальный кит /kit hero', 'Виртуальный верстак /craft', 'Узнать крафт /recipe', 'Узнать координаты /getpos', '5 слотов на аукционе', '2 привата', 'Префикс [HERO]'],
       badge: 'Старт'
@@ -22,21 +22,21 @@ export default function Index() {
     {
       id: 2,
       name: 'TITAN',
-      price: '199₽',
+      price: '50₽',
       image: 'https://cdn.poehali.dev/projects/390cba9d-ddc0-4998-babf-8adefc8eb816/files/c8577492-8085-4d1b-a6bc-580b809e32c5.jpg',
       features: ['Уникальный кит /kit titan', 'Надеть блок /hat', 'Восполнить голод /feed', 'РТП на большое расстояние', 'Узнать ID предмета /itemdb', '7 слотов на аукционе', '4 привата', 'Префикс [TITAN]']
     },
     {
       id: 3,
       name: 'AVENGER',
-      price: '299₽',
+      price: '100₽',
       image: 'https://cdn.poehali.dev/projects/390cba9d-ddc0-4998-babf-8adefc8eb816/files/c8577492-8085-4d1b-a6bc-580b809e32c5.jpg',
       features: ['Уникальный кит /kit avenger', 'Эндер-сундук /enderchest', 'Потушить огонь /ext', 'Игнорировать игрока /ignore', 'Очистить инвентарь /clear', '9 слотов на аукционе', '8 приватов', '6 домов /sethome', 'Префикс [AVENGER]']
     },
     {
       id: 4,
       name: 'OVERLORD',
-      price: '499₽',
+      price: '200₽',
       image: 'https://cdn.poehali.dev/projects/390cba9d-ddc0-4998-babf-8adefc8eb816/files/b3af6aa8-2944-41d3-b9b1-d87ee7431185.jpg',
       features: ['Уникальный кит /kit overlord', 'Доступ к префиксам /prefix', 'Починить предмет /repair', 'Найти игрока /near', 'Личное время /ptime', 'x2 валюты за убийства', '14 слотов на аукционе', '16 приватов', '12 домов', 'Префикс [OVERLORD]'],
       badge: 'Популярно'
@@ -44,14 +44,14 @@ export default function Index() {
     {
       id: 5,
       name: 'MAGISTER',
-      price: '799₽',
+      price: '250₽',
       image: 'https://cdn.poehali.dev/projects/390cba9d-ddc0-4998-babf-8adefc8eb816/files/b3af6aa8-2944-41d3-b9b1-d87ee7431185.jpg',
       features: ['Уникальный кит /kit magister', 'Префиксы /prefix', 'Сменить ник /nick', 'Инвентарь игрока /invsee', 'Починить все /repair all', 'Пополнить здоровье /heal', 'Отключить телепортации /tptoggle', 'x2 валюты за убийства', '22 слота на аукционе', '48 приватов', '32 дома', 'Префикс [MAGISTER]']
     },
     {
       id: 6,
       name: 'IMPERATOR',
-      price: '1299₽',
+      price: '400₽',
       image: 'https://cdn.poehali.dev/projects/390cba9d-ddc0-4998-babf-8adefc8eb816/files/b3af6aa8-2944-41d3-b9b1-d87ee7431185.jpg',
       features: ['Уникальный кит /kit imperator', 'Дополнительный набор /kit plus', 'Объявление /broadcast', 'Узнать имя /realname', 'Ударить молнией /lightning', 'РТП рядом с игроками', 'x4 валюты за убийства', 'Заход на заполненный сервер', '36 слотов на аукционе', '96 приватов', '48 домов', 'Префикс [IMPERATOR]'],
       badge: 'Выгодно'
@@ -59,7 +59,7 @@ export default function Index() {
     {
       id: 7,
       name: 'DRAGON',
-      price: '1999₽',
+      price: '650₽',
       image: 'https://cdn.poehali.dev/projects/390cba9d-ddc0-4998-babf-8adefc8eb816/files/b3af6aa8-2944-41d3-b9b1-d87ee7431185.jpg',
       features: ['Уникальный кит /kit dragon', 'Мега-набор /kit pluspro', 'Режим полета /fly', 'Выдавать донат /grant', 'Управление погодой и временем', 'x6 валюты за убийства', 'Заход на заполненный сервер', '999 слотов на аукционе', '999+ приватов', '999+ домов', 'Префикс [DRAGON]'],
       badge: 'ТОП'
@@ -67,7 +67,7 @@ export default function Index() {
     {
       id: 8,
       name: 'GOD',
-      price: '2999₽',
+      price: '1000₽',
       image: 'https://cdn.poehali.dev/projects/390cba9d-ddc0-4998-babf-8adefc8eb816/files/b3af6aa8-2944-41d3-b9b1-d87ee7431185.jpg',
       features: ['Уникальный кит /kit god', 'Все возможности DRAGON', 'Полное управление сервером', 'x6 валюты за убийства', '999 слотов на аукционе', '999+ приватов и домов', 'Префикс [GOD]'],
       badge: 'МАКСИМУМ'
