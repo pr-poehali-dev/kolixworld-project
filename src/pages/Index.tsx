@@ -168,7 +168,7 @@ export default function Index() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img 
-                src="https://cdn.poehali.dev/files/84a82a8b-0b23-4e6b-87bd-909f2168544e.jpg" 
+                src="https://cdn.poehali.dev/files/9ffa7a43-a98c-4375-be7a-9b31e0876144.jpg" 
                 alt="KH Logo"
                 className="w-12 h-12 object-contain"
               />
@@ -209,7 +209,7 @@ export default function Index() {
           </div>
           <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
             <img 
-              src="https://cdn.poehali.dev/files/84a82a8b-0b23-4e6b-87bd-909f2168544e.jpg" 
+              src="https://cdn.poehali.dev/files/9ffa7a43-a98c-4375-be7a-9b31e0876144.jpg" 
               alt="KH Logo"
               className="w-96 h-96 object-contain"
             />
@@ -518,7 +518,7 @@ export default function Index() {
             <div className="text-center md:text-left">
               <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
                 <img 
-                  src="https://cdn.poehali.dev/files/84a82a8b-0b23-4e6b-87bd-909f2168544e.jpg" 
+                  src="https://cdn.poehali.dev/files/9ffa7a43-a98c-4375-be7a-9b31e0876144.jpg" 
                   alt="KH Logo"
                   className="w-12 h-12 object-contain"
                 />
