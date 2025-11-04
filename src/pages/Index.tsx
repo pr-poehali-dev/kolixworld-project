@@ -74,6 +74,75 @@ export default function Index() {
     }
   ];
 
+  const cases = [
+    {
+      id: 1,
+      name: 'Кейс с донатом',
+      price: '149₽',
+      icon: 'Gift',
+      description: 'Может выпасть любая привилегия соответствующего режима'
+    },
+    {
+      id: 2,
+      name: 'Кейс с монетами',
+      price: '99₽',
+      icon: 'Coins',
+      description: 'Может выпасть от 1000 до 20000 игровых монет'
+    },
+    {
+      id: 3,
+      name: 'Кейс с префиксами',
+      price: '79₽',
+      icon: 'Tag',
+      description: 'ГЕОГРАФ, АНТРОПОЛОГ, ЛЕОН, ВОРОН, ХЕЙТЕР, АНАРХИСТ, SUPREME, ПОВЕЛИТЕЛЬ, MARVEL или МАЙНКРАФТЕР'
+    },
+    {
+      id: 4,
+      name: 'Кейс с риликами',
+      price: '59₽',
+      icon: 'Cookie',
+      description: 'Может выпасть от 10 до 15000 риликов/печенек'
+    },
+    {
+      id: 5,
+      name: 'Кейс с вещами',
+      price: '89₽',
+      icon: 'Sword',
+      description: 'Алмазное или железное снаряжение с рандомным зачарованием'
+    }
+  ];
+
+  const services = [
+    {
+      id: 1,
+      name: 'Разбан',
+      price: '299₽',
+      icon: 'UserCheck',
+      description: 'Снятие запрета на вход на сервер'
+    },
+    {
+      id: 2,
+      name: 'Размут',
+      price: '149₽',
+      icon: 'MessageSquare',
+      description: 'Снятие запрета на использование чата'
+    },
+    {
+      id: 3,
+      name: 'Рилики/Печеньки',
+      price: 'от 49₽',
+      icon: 'Coins',
+      description: 'Внутриигровая валюта для покупки ресурсов'
+    },
+    {
+      id: 4,
+      name: 'Ключи к кейсам',
+      price: 'от 29₽',
+      icon: 'Key',
+      description: 'Ключи для открытия сундуков удачи'
+    }
+  ];
+
   const rules = [
     { title: 'Общие правила', content: 'Запрещено использование читов, багов и эксплойтов. Уважайте других игроков и администрацию.' },
     { title: 'Правила чата', content: 'Запрещен мат, спам, флуд, реклама других серверов, оскорбления и угрозы.' },
@@ -98,6 +167,9 @@ export default function Index() {
               </button>
               <button onClick={() => setActiveSection('donates')} className="text-white hover:text-accent transition-colors font-medium">
                 Донаты
+              </button>
+              <button onClick={() => setActiveSection('cases')} className="text-white hover:text-accent transition-colors font-medium">
+                Кейсы
               </button>
               <button onClick={() => setActiveSection('rules')} className="text-white hover:text-accent transition-colors font-medium">
                 Правила
@@ -205,6 +277,75 @@ export default function Index() {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {activeSection === 'cases' && (
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12 animate-fade-in">
+              <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Кейсы и услуги</h2>
+              <p className="text-xl text-muted-foreground">Испытай удачу или купи нужную услугу</p>
+            </div>
+            
+            <div className="mb-16">
+              <h3 className="text-3xl font-bold text-secondary mb-6 text-center">🎁 Кейсы удачи</h3>
+              <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+                {cases.map((caseItem, index) => (
+                  <Card 
+                    key={caseItem.id}
+                    className="pixel-corners border-4 border-accent/30 hover:scale-105 transition-all hover:shadow-2xl animate-fade-in"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    <CardHeader className="text-center">
+                      <div className="w-20 h-20 mx-auto mb-4 bg-accent/20 pixel-corners flex items-center justify-center">
+                        <Icon name={caseItem.icon as any} size={40} className="text-accent" />
+                      </div>
+                      <CardTitle className="text-xl text-primary">{caseItem.name}</CardTitle>
+                      <CardDescription className="text-center">
+                        <span className="text-3xl font-bold text-secondary">{caseItem.price}</span>
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-muted-foreground text-center mb-4">{caseItem.description}</p>
+                      <Button className="w-full bg-accent hover:bg-accent/90 text-primary font-bold pixel-corners">
+                        Купить
+                      </Button>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-3xl font-bold text-secondary mb-6 text-center">⚙️ Услуги</h3>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                {services.map((service, index) => (
+                  <Card 
+                    key={service.id}
+                    className="pixel-corners border-4 border-primary/30 hover:scale-105 transition-all hover:shadow-2xl animate-fade-in"
+                    style={{ animationDelay: `${(index + 5) * 0.1}s` }}
+                  >
+                    <CardHeader className="text-center">
+                      <div className="w-16 h-16 mx-auto mb-3 bg-primary/20 pixel-corners flex items-center justify-center">
+                        <Icon name={service.icon as any} size={32} className="text-primary" />
+                      </div>
+                      <CardTitle className="text-lg text-primary">{service.name}</CardTitle>
+                      <CardDescription className="text-center">
+                        <span className="text-2xl font-bold text-secondary">{service.price}</span>
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-muted-foreground text-center mb-4">{service.description}</p>
+                      <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold pixel-corners">
+                        Купить
+                      </Button>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
         </section>
