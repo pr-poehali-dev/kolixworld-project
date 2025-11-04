@@ -205,7 +205,7 @@ export default function Index() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <div className="bg-white/90 px-6 py-3 pixel-corners shadow-xl">
                   <p className="text-sm text-muted-foreground">IP адрес сервера:</p>
-                  <p className="text-xl font-bold text-primary">play.kolixworld.ru</p>
+                  <p className="text-xl font-bold text-primary">g1.yukicore.org:25331</p>
                 </div>
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-bold text-lg px-8 py-6 pixel-corners shadow-xl">
                   <Icon name="Users" className="mr-2" size={24} />
