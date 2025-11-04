@@ -205,6 +205,13 @@ export default function Index() {
               className="w-full h-full object-cover"
             />
           </div>
+          <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
+            <img 
+              src="https://cdn.poehali.dev/files/84a82a8b-0b23-4e6b-87bd-909f2168544e.jpg" 
+              alt="KH Logo"
+              className="w-96 h-96 object-contain"
+            />
+          </div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl mx-auto text-center space-y-6 animate-fade-in">
               <h2 className="text-5xl md:text-7xl font-bold text-primary drop-shadow-lg">
