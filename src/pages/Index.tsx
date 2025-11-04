@@ -166,10 +166,12 @@ export default function Index() {
       <nav className="sticky top-0 z-50 bg-primary/95 backdrop-blur-sm border-b-4 border-primary/80 shadow-lg">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-accent pixel-corners flex items-center justify-center">
-                <Icon name="Pickaxe" size={24} className="text-primary" />
-              </div>
+            <div className="flex items-center gap-3">
+              <img 
+                src="https://cdn.poehali.dev/files/84a82a8b-0b23-4e6b-87bd-909f2168544e.jpg" 
+                alt="KH Logo"
+                className="w-12 h-12 object-contain"
+              />
               <h1 className="text-2xl font-bold text-white">KOLIXWORLD</h1>
             </div>
             <div className="hidden md:flex gap-6">
