@@ -13,27 +13,64 @@ export default function Index() {
   const donatPackages = [
     {
       id: 1,
-      name: 'VIP',
-      price: '299₽',
+      name: 'HERO',
+      price: '99₽',
       image: 'https://cdn.poehali.dev/projects/390cba9d-ddc0-4998-babf-8adefc8eb816/files/c8577492-8085-4d1b-a6bc-580b809e32c5.jpg',
-      features: ['Префикс [VIP]', 'Доступ к /fly', '5 точек дома', 'Приват 10 регионов', 'Цветной ник'],
-      badge: 'Популярно'
+      features: ['Уникальный кит /kit hero', 'Виртуальный верстак /craft', 'Узнать крафт /recipe', 'Узнать координаты /getpos', '5 слотов на аукционе', '2 привата', 'Префикс [HERO]'],
+      badge: 'Старт'
     },
     {
       id: 2,
-      name: 'PREMIUM',
-      price: '599₽',
-      image: 'https://cdn.poehali.dev/projects/390cba9d-ddc0-4998-babf-8adefc8eb816/files/b3af6aa8-2944-41d3-b9b1-d87ee7431185.jpg',
-      features: ['Префикс [PREMIUM]', 'Доступ к /fly', '10 точек дома', 'Приват 25 регионов', 'Цветной ник', 'Кит раз в день'],
-      badge: 'Выгодно'
+      name: 'TITAN',
+      price: '199₽',
+      image: 'https://cdn.poehali.dev/projects/390cba9d-ddc0-4998-babf-8adefc8eb816/files/c8577492-8085-4d1b-a6bc-580b809e32c5.jpg',
+      features: ['Уникальный кит /kit titan', 'Надеть блок /hat', 'Восполнить голод /feed', 'РТП на большое расстояние', 'Узнать ID предмета /itemdb', '7 слотов на аукционе', '4 привата', 'Префикс [TITAN]']
     },
     {
       id: 3,
-      name: 'DELUXE',
-      price: '999₽',
+      name: 'AVENGER',
+      price: '299₽',
+      image: 'https://cdn.poehali.dev/projects/390cba9d-ddc0-4998-babf-8adefc8eb816/files/c8577492-8085-4d1b-a6bc-580b809e32c5.jpg',
+      features: ['Уникальный кит /kit avenger', 'Эндер-сундук /enderchest', 'Потушить огонь /ext', 'Игнорировать игрока /ignore', 'Очистить инвентарь /clear', '9 слотов на аукционе', '8 приватов', '6 домов /sethome', 'Префикс [AVENGER]']
+    },
+    {
+      id: 4,
+      name: 'OVERLORD',
+      price: '499₽',
       image: 'https://cdn.poehali.dev/projects/390cba9d-ddc0-4998-babf-8adefc8eb816/files/b3af6aa8-2944-41d3-b9b1-d87ee7431185.jpg',
-      features: ['Префикс [DELUXE]', 'Доступ к /fly', 'Неограниченные дома', 'Приват без лимитов', 'Анимированный ник', 'Супер кит 2 раза в день', 'Доступ к /god'],
+      features: ['Уникальный кит /kit overlord', 'Доступ к префиксам /prefix', 'Починить предмет /repair', 'Найти игрока /near', 'Личное время /ptime', 'x2 валюты за убийства', '14 слотов на аукционе', '16 приватов', '12 домов', 'Префикс [OVERLORD]'],
+      badge: 'Популярно'
+    },
+    {
+      id: 5,
+      name: 'MAGISTER',
+      price: '799₽',
+      image: 'https://cdn.poehali.dev/projects/390cba9d-ddc0-4998-babf-8adefc8eb816/files/b3af6aa8-2944-41d3-b9b1-d87ee7431185.jpg',
+      features: ['Уникальный кит /kit magister', 'Префиксы /prefix', 'Сменить ник /nick', 'Инвентарь игрока /invsee', 'Починить все /repair all', 'Пополнить здоровье /heal', 'Отключить телепортации /tptoggle', 'x2 валюты за убийства', '22 слота на аукционе', '48 приватов', '32 дома', 'Префикс [MAGISTER]']
+    },
+    {
+      id: 6,
+      name: 'IMPERATOR',
+      price: '1299₽',
+      image: 'https://cdn.poehali.dev/projects/390cba9d-ddc0-4998-babf-8adefc8eb816/files/b3af6aa8-2944-41d3-b9b1-d87ee7431185.jpg',
+      features: ['Уникальный кит /kit imperator', 'Дополнительный набор /kit plus', 'Объявление /broadcast', 'Узнать имя /realname', 'Ударить молнией /lightning', 'РТП рядом с игроками', 'x4 валюты за убийства', 'Заход на заполненный сервер', '36 слотов на аукционе', '96 приватов', '48 домов', 'Префикс [IMPERATOR]'],
+      badge: 'Выгодно'
+    },
+    {
+      id: 7,
+      name: 'DRAGON',
+      price: '1999₽',
+      image: 'https://cdn.poehali.dev/projects/390cba9d-ddc0-4998-babf-8adefc8eb816/files/b3af6aa8-2944-41d3-b9b1-d87ee7431185.jpg',
+      features: ['Уникальный кит /kit dragon', 'Мега-набор /kit pluspro', 'Режим полета /fly', 'Выдавать донат /grant', 'Управление погодой и временем', 'x6 валюты за убийства', 'Заход на заполненный сервер', '999 слотов на аукционе', '999+ приватов', '999+ домов', 'Префикс [DRAGON]'],
       badge: 'ТОП'
+    },
+    {
+      id: 8,
+      name: 'GOD',
+      price: '2999₽',
+      image: 'https://cdn.poehali.dev/projects/390cba9d-ddc0-4998-babf-8adefc8eb816/files/b3af6aa8-2944-41d3-b9b1-d87ee7431185.jpg',
+      features: ['Уникальный кит /kit god', 'Все возможности DRAGON', 'Полное управление сервером', 'x6 валюты за убийства', '999 слотов на аукционе', '999+ приватов и домов', 'Префикс [GOD]'],
+      badge: 'МАКСИМУМ'
     }
   ];
 
@@ -131,12 +168,12 @@ export default function Index() {
               <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Донат-пакеты</h2>
               <p className="text-xl text-muted-foreground">Выбери свой пакет привилегий</p>
             </div>
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
               {donatPackages.map((pkg, index) => (
                 <Card 
                   key={pkg.id} 
                   className={`pixel-corners border-4 hover:scale-105 transition-all hover:shadow-2xl ${
-                    index === 1 ? 'border-accent md:-mt-4 md:scale-105' : 'border-primary/30'
+                    index === 6 ? 'border-accent lg:-mt-4' : 'border-primary/30'
                   } animate-fade-in`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
