@@ -235,7 +235,7 @@ export default function Index() {
               </div>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
                 {[
-                  { icon: 'Users', label: 'Онлайн', value: '247+' },
+                  { icon: 'Users', label: 'Онлайн', value: '10' },
                   { icon: 'Shield', label: 'Защита', value: '100%' },
                   { icon: 'Zap', label: 'Без лагов', value: 'TPS 20' },
                   { icon: 'Heart', label: 'Рейтинг', value: '5.0' }
